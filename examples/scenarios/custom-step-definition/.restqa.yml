@@ -1,0 +1,9 @@
+version: 0.0.1
+metadata:
+  code: RESTQA-EXAMPLE-SCENARIO-CUSTOM-STEP-DEFINITION
+  name: "@restqa/example-scenario-custom-step-definition"
+  description: A RestQA example running on fastify
+tests:
+  local:
+    port: "3012"
+    command: npm run dev

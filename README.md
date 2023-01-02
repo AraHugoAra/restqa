@@ -28,7 +28,7 @@ Within our DEV team while working with microservice, we realized a few thing:
 - [X] **WE HATE** Maintaining the HTTP Mocks
 - [X] **WE HATE** Rewrite the test while changing the microservice technology
 
-This is why we decided to challenge ourself on how to transform this anger into a positive initative.
+This is why we decided to challenge ourself on how to transform this frustration into a positive initative.
 RestQA was build with a simple goal: Driving the happiness of the DEV team through testing.
 
 Run one command and get everything that you need to enjoy maintaining your microservice.
@@ -38,6 +38,8 @@ Run one command and get everything that you need to enjoy maintaining your micro
 Gherkin Based but **KEEP CALM It aint's BDD!**
 
 ![Step definition](https://restqa.io/assets/img/content/2-why-step1.gif)
+
+The RestQA Community maintains the step definitions! **YOU** focus on writting scenarios **WE** taking care of everything else 🤗
 
 #### Screenshot
 
@@ -67,11 +69,11 @@ https://user-images.githubusercontent.com/4768226/205502972-1fddb8f2-130e-4071-a
 Once you get nodeJs on your local machine run the command
 
 ```
-npm install -D @restqa/restqa
+npm install -D @restqa/restqa@next
 ```
 
 ```
-yarn add @restqa/restqa -D
+yarn add @restqa/restqa@next -D
 ```
 
 ## 🎯 Usage

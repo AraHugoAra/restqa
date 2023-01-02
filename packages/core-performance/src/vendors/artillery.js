@@ -28,20 +28,24 @@ module.exports = function (features, outputFolder) {
               obj.json = clean(options.json);
             }
 
-            if (options.body) {
+            if (options.form) {
               obj.formData = clean(api.request.bodyBackup);
             }
 
             obj.expect = [
               {
                 statusCode: api.response.statusCode
-              },
-              {
-                contentType: getContentType(
-                  api.response.headers["content-type"]
-                )
               }
             ];
+
+            const contentType = getContentType(
+              api.response.headers["content-type"]
+            );
+
+            if (contentType) {
+              obj.expect.push({contentType});
+            }
+
             const result = {};
             result[(options.method || "get").toLowerCase()] = obj;
             return result;
