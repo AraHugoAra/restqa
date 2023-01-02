@@ -1,0 +1,11 @@
+scenarios:
+  - name: Initial scenario
+    flow:
+      - get:
+          url: /
+          headers:
+            x-correlation-id: test-e2e-get-799-1672090737029
+            user-agent: restqa (https://github.com/restqa/restqa)
+          expect:
+            - statusCode: 200
+            - contentType: json
